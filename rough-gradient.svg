@@ -16,6 +16,16 @@
       xChannelSelector="R"
       yChannelSelector="G" />
   </filter>
+  <mask id="mask">
+    <circle
+      cx="100"
+      cy="100"
+      r="100"
+      style="
+        fill: #FFF;
+      "
+    />
+  </mask>
 
   <circle
     cx="100"
@@ -27,5 +37,6 @@
       stroke-width: 40;
       filter: url(#displacementFilter);
     "
+    mask="url(#mask)"
   />
 </svg>
