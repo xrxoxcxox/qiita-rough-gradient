@@ -32,6 +32,14 @@
     cy="100"
     r="100"
     style="
+      fill: #37BCE3;
+    "
+  />
+  <circle
+    cx="100"
+    cy="100"
+    r="100"
+    style="
       fill: none;
       stroke: #003E96;
       stroke-width: 40;
