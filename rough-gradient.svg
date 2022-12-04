@@ -3,6 +3,20 @@
   height="200"
   viewBox="0 0 200 200"
   xmlns="http://www.w3.org/2000/svg">
+  <filter id="displacementFilter">
+    <feTurbulence
+      type="fractalNoise"
+      baseFrequency="0.8"
+      numOctaves="3"
+      result="fractalNoise" />
+    <feDisplacementMap
+      in2="fractalNoise"
+      in="SourceGraphic"
+      scale="150"
+      xChannelSelector="R"
+      yChannelSelector="G" />
+  </filter>
+
   <circle
     cx="100"
     cy="100"
@@ -10,7 +24,8 @@
     style="
       fill: none;
       stroke: #003E96;
-      stroke-width: 20;
+      stroke-width: 40;
+      filter: url(#displacementFilter);
     "
   />
 </svg>
